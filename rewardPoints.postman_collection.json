@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "4d0915c6-e6af-489e-9543-aabc54b8e709",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14096918"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/transactions/rewards",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"customerId\": \"C001\",\n        \"amount\": 120.0,\n        \"date\": \"2023-06-01\"\n    },\n    {\n        \"customerId\": \"C001\",\n        \"amount\": 80.0,\n        \"date\": \"2023-06-10\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/transactions/rewards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactions",
+						"rewards"
+					]
+				},
+				"description": "RewardPointsPostmanCollection"
+			},
+			"response": []
+		}
+	]
+}
